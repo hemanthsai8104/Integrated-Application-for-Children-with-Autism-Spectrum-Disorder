@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Assistive App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Assistive Learning Hub</h1>
+        <nav>
+            <button id="nav-home" class="nav-button active">Home</button>
+            <button id="nav-emotion" class="nav-button">Emotion Recognition</button>
+            <button id="nav-aac" class="nav-button">Communication Aid</button>
+            <button id="nav-learning" class="nav-button">Learning Game</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home-screen" class="screen active">
+            <h2>Welcome!</h2>
+            <p>Choose a module from the navigation above to get started.</p>
+        </section>
+        <section id="emotion-screen" class="screen">
+            <h2>How Are You Feeling?</h2>
+            <div class="emotion-container">
+                <video id="webcam" width="400" height="300" autoplay muted playsinline></video>
+                <div id="emotion-result" class="emotion-feedback">Waiting...</div>
+                <button id="emotion-start-btn" class="action-button">Start Camera</button>
+            </div>
+        </section>
+        <section id="aac-screen" class="screen">
+            <h2>My Voice</h2>
+            <p>Tap an icon to speak.</p>
+            <div id="aac-grid" class="aac-grid-container"></div>
+        </section>
+        <section id="learning-screen" class="screen">
+            <h2>Let's Play!</h2>
+            <div class="game-container">
+                <h3 id="game-prompt">Tap the color: Red</h3>
+                <div id="game-options" class="game-options-container"></div>
+                <div id="game-feedback"></div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; text-align: center; }
+header { background-color: #4a90e2; color: white; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+nav { margin-top: 1rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.nav-button { background: none; border: 2px solid white; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 1rem; transition: all 0.3s; }
+.nav-button:hover, .nav-button.active { background-color: white; color: #4a90e2; }
+main { padding: 2rem; }
+.screen { display: none; }
+.screen.active { display: block; animation: fadeIn 0.5s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.action-button { background-color: #28a745; color: white; border: none; padding: 12px 25px; border-radius: 8px; font-size: 1.1rem; cursor: pointer; transition: background-color 0.2s; }
+.action-button:hover { background-color: #218838; }
+.emotion-container { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+#webcam { border-radius: 10px; border: 5px solid #ddd; background-color: #222; max-width: 100%; height: auto; }
+.emotion-feedback { font-size: 2rem; font-weight: bold; color: #d85c2c; min-height: 40px; }
+.aac-grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; max-width: 800px; margin: auto; }
+.aac-icon { background-color: white; border-radius: 15px; padding: 20px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; font-size: 1.2rem; }
+.aac-icon:hover { transform: translateY(-5px); }
+.aac-icon span { font-size: 3rem; display: block; margin-bottom: 10px; }
+.game-container { padding: 20px; background-color: #fff8e1; border-radius: 15px; max-width: 600px; margin: auto; }
+#game-prompt { font-size: 1.8rem; margin-bottom: 20px; }
+.game-options-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.game-option { width: 100px; height: 100px; border-radius: 15px; cursor: pointer; border: 4px solid transparent; transition: border 0.2s; }
+.game-option:hover { border-color: #333; }
+#game-feedback { margin-top: 20px; font-size: 1.5rem; font-weight: bold; min-height: 30px; }
